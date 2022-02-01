@@ -8,7 +8,7 @@ This is a little tutorial how to install and run [Apache Jena Fuseki](https://je
 
 Go to the following link and download the current version of Fuseki. Make sure you download the right file (binary distribution of Fuseki)
 
-![step_1](./Files/Step_1.png)
+![Selecting the right file](./Files/Step_1.png)
 
 ## Step 2: Unpack Fuseki
 
@@ -21,7 +21,7 @@ Unpack the zip-file in a meaningful directory on your local machine (best case s
 Open the Windows Console by using the shortcut "Windows + R" and type in "cmd" in the prompt.
 The console will open in a new window.
 
-![Your directory "C:/Fuseki" should look like this now](./Files/Step_3.png)
+![Starting the cmd](./Files/Step_3.png)
 
 ## Step 4: Change the working directory
 
@@ -33,7 +33,7 @@ cd C:/Fuseki
 
 "cd" stands for "change directory" and the console will use our new path now as working directory.
 
-![Your directory "C:/Fuseki" should look like this now](./Files/Step_4.png)
+![Changing the working directory](./Files/Step_4.png)
 
 ## Step 5: Run Fuseki
 
@@ -45,11 +45,11 @@ fuseki-server.bat
 
 and the server will fire up. The console will print out on which Port the server gets started. Usually it uses the Port 3030.
 
-![Your directory "C:/Fuseki" should look like this now](./Files/Step_5_1.png)
+![Run fuseki-server.bat](./Files/Step_5_1.png)
 
 We can use this port to open up Fuseki in our webbrowser. Simply type "localhost:3030" in your browser.
 
-![Your directory "C:/Fuseki" should look like this now](./Files/Step_5_2.png)
+![Fuseki in a browser](./Files/Step_5_2.png)
 
 Congarts! Fuseki is now running on your local machine. You have to fire up the server every time you close the console or restart your device.
 
@@ -83,7 +83,7 @@ Copy the text to a text document and save it on your local machine and rename th
 With Fuseki opend in the browser, go to the tab "manage datasets" and select "add new dataset".
 There you will have to give the new dataset a name and select a type. We will call the dataset "Example-Dataset" and select the type "TDB2)
 
-![Your directory "C:/Fuseki" should look like this now](./Files/Step_6.png)
+![Create a new dataset](./Files/Step_6.png)
 
 Next, click the "create dataset" button. It will now appear under the tab "existing datasets"
 
@@ -91,25 +91,25 @@ Next, click the "create dataset" button. It will now appear under the tab "exist
 
 Now we are going to upload the example file that we have created. Therefore, in the tab "existing datasets", under the category "manage datasets", we click on the button "upload data".
 
-![Your directory "C:/Fuseki" should look like this now](./Files/Step_7_1.png)
+![Manage datasets](./Files/Step_7_1.png)
 
 Now we upload our example file, either by clicking "select files", or by draging the file into the browser and dropping it on the "select files" button.
 
-![Your directory "C:/Fuseki" should look like this now](./Files/Step_7_2.png)
+![Existing Datasets](./Files/Step_7_2.png)
 
 The file is not yet uploaded to the server. In order to upload it we have to click the "upload now" button.
 
-![Your directory "C:/Fuseki" should look like this now](./Files/Step_7_3.png)
+![Upload files](./Files/Step_7_3.png)
 
 At this step fuseki will tell you if there were some maleformed triples in your file. Otherwise it will just return a "success" message.
 
-![Your directory "C:/Fuseki" should look like this now](./Files/Step_7_4.png)
+![Upload files 2](./Files/Step_7_4.png)
 
 ## Step 8: SPARQL queries
 
 Now we can move on to the "dataset" tab where we can query our data using SPARQL. If you have multiple datasets on your server you can browse them via the dropdown menu on top of the page. An example query is already inserted into Fuseki an can be used to test it. just hit the little play button and inspect the results. For more advanced queries please consider the [W3C Recommondations](https://www.w3.org/TR/rdf-sparql-query/)
 
-![Your directory "C:/Fuseki" should look like this now](./Files/Step_8.png)
+![Query in the browser](./Files/Step_8.png)
 
 ## Step 9: Using Fuseki with HTTP Requests
 
@@ -136,6 +136,8 @@ As soon as we hit the "sent" button we get the results of our query returned in 
 
 If we want to create new data on our Dataset using SPARQL we would need to exchange "query" with "update"
 
-![Your directory "C:/Fuseki" should look like this now](./Files/Step_9.png)
+Fun fact: You can copy the URL with the query to the browser and see the results on a webpage.
+
+![Query with postman](./Files/Step_9.png)
 
 Postman can also generate us code snippets that show us how to achieve the same results with different programming languages and modules. When you click on the right hand side on the little code symbol "</>" you can select a language and a module and Postman will show you how this request is written in that language.
