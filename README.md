@@ -141,3 +141,8 @@ Fun fact: You can copy the URL with the query to the browser and see the results
 ![Query with postman](./Files/Step_9.png)
 
 Postman can also generate us code snippets that show us how to achieve the same results with different programming languages and modules. When you click on the right hand side on the little code symbol "</>" you can select a language and a module and Postman will show you how this request is written in that language.
+
+
+# Java:
+If you have difficulties getting Fuseki to run check if you have a current Java version (JDK) installed on your computer. If not you can find it [here](https://www.oracle.com/java/technologies/downloads/).
+
