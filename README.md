@@ -9,7 +9,7 @@ If you have difficulties getting Fuseki to run check if you have a current Java 
 
 ## Step 1: Download Fuseki
 
-Go to the following link and download the current version of Fuseki. Make sure you download the right file (binary distribution of Fuseki)
+Go to the following [link](https://jena.apache.org/download/) and download the current version of Fuseki. Make sure you download the right file (binary distribution of Fuseki)
 
 ![Selecting the right file](./Files/Step_1.png)
 
